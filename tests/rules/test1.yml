@@ -1,0 +1,11 @@
+title: Test1
+logsource:
+  category: webserver
+  product: windows
+detection:
+  selection:
+    ParentCommandLine|contains:
+      - ".doc.lnk"
+      - ".docx.lnk"
+      - ".pdf.lnk"
+  condition: selection
